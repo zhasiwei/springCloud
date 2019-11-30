@@ -1,0 +1,14 @@
+server:
+  port: 8801
+ 
+ 
+spring:
+  application:
+   name: consumer-8801
+   
+eureka:
+  instance:
+    hostname: localhost:8801
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
